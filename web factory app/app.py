@@ -161,7 +161,7 @@ activities = {
             "location": "Rabat",
             "description": "The tomb of King Mohammed V, featuring intricate Moroccan artistry and history.",
             "url": "https://www.moroccoworldnews.com/2021/01/334824/mausoleum-of-mohammed-v-in-rabat-morocco",
-            "image": "https://www.moroccoworldnews.com/wp-content/uploads/2021/01/mausoleum-mohammed-v-rabat.jpg"
+            "image": "MausoleumMohammed.jpg"
         }
 
     ],
