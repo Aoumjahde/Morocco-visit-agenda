@@ -84,13 +84,13 @@ activities = {
     ],
     #************************************
     "Historical Sites": [ # category 02
-        {
-            "name": "Hassan II Mosque",
-            "location": "Casablanca",
-            "description": "The largest mosque in Morocco, renowned for its stunning architecture and seaside location.",
-            "url": "https://www.theculturetrip.com/africa/morocco/articles/a-guide-to-the-hassan-ii-mosque-in-casablanca",
-            "image": "https://www.theculturetrip.com/wp-content/uploads/2018/02/hassan-ii-mosque-casablanca.jpg"
-        },
+{
+    "name": "Hassan II Mosque",
+    "location": "Casablanca",
+    "description": "The largest mosque in Morocco, renowned for its stunning architecture and seaside location.",
+    "url": "https://www.theculturetrip.com/africa/morocco/articles/a-guide-to-the-hassan-ii-mosque-in-casablanca",
+    "image": "hassan2mosuqe.jpeng"
+},
 
         {
             "name": "Volubilis",
