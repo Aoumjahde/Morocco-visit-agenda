@@ -88,7 +88,7 @@ activities = {
             "name": "Hassan II Mosque",
             "location": "Casablanca",
             "description": "The largest mosque in Morocco, renowned for its stunning architecture and seaside location.",
-            "url": "https://www.theculturetrip.com/africa/morocco/articles/a-guide-to-the-hassan-ii-mosque-in-casablanca",
+            "url": "https://en.wikipedia.org/wiki/Hassan_II_Mosque",
             "image": "https://images.memphistours.com/large/d4582f9dbf053d1c4238918d4932b6a1.jpg"
         },
 
@@ -96,7 +96,7 @@ activities = {
             "name": "Volubilis",
             "location": "Near Meknes",
             "description": "A well-preserved Roman city and UNESCO World Heritage site, featuring stunning mosaics and ruins.",
-            "url": "https://www.planetware.com/tourist-attractions/morocco-meknes-volubilis-mar-mek.htm",
+            "url": "https://en.wikipedia.org/wiki/Volubilis",
             "image": "https://i.pinimg.com/originals/6a/d4/59/6ad4596310cd0b59cebf11f85b474b4b.jpg"
         },
 
@@ -104,7 +104,7 @@ activities = {
             "name": "Aït Benhaddou",
             "location": "Ouarzazate",
             "description": "A fortified village and UNESCO site, famous for its earthen buildings and appearances in movies like 'Gladiator.'",
-            "url": "https://www.moroccotours.net/blog/ait-benhaddou-morocco",
+            "url": "https://en.wikipedia.org/wiki/A%C3%AFt_Benhaddou",
             "image": "https://ucarecdn.com/a8b1b6cb-45cb-4b58-b596-82b1214f5063/"
         },
 
@@ -112,7 +112,7 @@ activities = {
             "name": "El Badi Palace",
             "location": "Marrakech",
             "description": "Ruins of a once-grand palace showcasing Saadian Dynasty architecture and history.",
-            "url": "https://www.roughguides.com/morocco/marrakech/el-badi-palace/",
+            "url": "https://en.wikipedia.org/wiki/El_Badi_Palace",
             "image": "https://www.gpsmycity.com/img/gd_attr/19223.jpg"
         },
 
@@ -120,7 +120,7 @@ activities = {
             "name": "Saadian Tombs",
             "location": "Marrakech",
             "description": "A hidden necropolis dating back to the Saadian Dynasty, famous for its intricate decoration.",
-            "url": "https://www.traveltriangle.com/blog/saadian-tombs-marrakech/",
+            "url": "https://saadiantombs.com/",
             "image": "https://global-geography.org/attach/Geography/Africa/Morocco/Pictures/Imperial_Cities/Rabat_-_Mausoleum_of_Mohammed_V_4/MA290_Mausoleum_Mohammed_V.jpg"
         },
 
@@ -128,7 +128,7 @@ activities = {
             "name": "Chellah",
             "location": "Rabat",
             "description": "An ancient necropolis and Roman ruin located in the capital city of Morocco.",
-            "url": "https://www.moroccotravelblog.com/chellah-the-roots-of-rabat/",
+            "url": "https://en.wikipedia.org/wiki/Chellah",
             "image": "https://media-cdn.sygictraveldata.com/media/800x600/612664395a40232133447d33247d383738373936"
         },
 
@@ -136,7 +136,7 @@ activities = {
             "name": "Bahia Palace",
             "location": "Marrakech",
             "description": "A 19th-century palace showcasing stunning Moroccan architecture and lush gardens.",
-            "url": "https://www.tripadvisor.com/Attraction_Review-g293734-d318068-Reviews-Bahia_Palace-Marrakech_Marrakech_Safi.html",
+            "url": "https://bahia-palace.com/",
             "image": "https://morocco-phototours.com/wp-content/uploads/2023/07/Bahia-Palace.jpg"
         },
 
@@ -144,14 +144,14 @@ activities = {
             "name": "Kasbah of the Udayas",
             "location": "Rabat",
             "description": "A historic kasbah with picturesque streets, Andalusian gardens, and ocean views.",
-            "url": "https://www.touropia.com/kasbah-of-the-udayas/",
+            "url": "https://thinkmorocco.com/kasbah-of-udayas/",
             "image": "https://images.memphistours.com/large/75e0e0cbb7e76afe2e054d091912bb41.jpg"
         },
         {
             "name": "Fez Medina (Fes el Bali)",
             "location": "Fez",
             "description": "One of the oldest and largest medieval cities in the world, and a UNESCO World Heritage site.",
-            "url": "https://www.planetware.com/morocco/fez-el-bali-fes-mar-fes.htm",
+            "url": "https://www.fes.fr/medina-fes-el-bali",
             "image": "https://teaspoonofadventure.com/wp-content/uploads/2020/05/IMG_1613-760x1013.jpg"
         },
 
@@ -159,7 +159,7 @@ activities = {
             "name": "Mausoleum of Mohammed V",
             "location": "Rabat",
             "description": "The tomb of King Mohammed V, featuring intricate Moroccan artistry and history.",
-            "url": "https://www.moroccoworldnews.com/2021/01/334824/mausoleum-of-mohammed-v-in-rabat-morocco",
+            "url": "https://thinkmorocco.com/mohamed-v-mausoleum/",
             "image": "https://www.gpsmycity.com/img/gd_attr/44615.jpg"
         }
 
@@ -233,9 +233,82 @@ activities = {
             "name": "Imsouane",
             "location": "Atlantic Coast",
             "description": "A tranquil fishing village popular among surfers and seafood lovers, with stunning beaches and views.",
-            "url": "https://www.surfertoday.com/travel/imsouane",
+            "url": "https://www.bestsurfdestinations.com/surfing-imsouane/",
             "image": "https://www.travelsurfmorocco.com/wp-content/uploads/2016/04/1-imessouane-bay.jpg"}
     ],
+    "Food & Drink": [ 
+        {
+            "name": "Tagine Cooking Experience",
+            "location": "Marrakech",
+            "description": "Learn to prepare Morocco’s iconic slow-cooked dish, rich in spices and flavors, in a traditional tagine pot.",
+            "url": "https://en.wikipedia.org/wiki/Tajine",
+            "image": "https://simplynaturalgourmet.com/wp-content/uploads/2014/07/tandoori-chicken-tagine4.jpg"
+        },
+        {
+            "name": "Moroccan Mint Tea Ceremony",
+            "location": "Fez",
+            "description": "Experience the art of pouring and drinking traditional mint tea, a symbol of hospitality in Morocco.",
+            "url": "https://en.wikipedia.org/wiki/Maghrebi_mint_tea",
+            "image": "https://moroccanfoodtour.com/wp-content/uploads/2020/07/moroccan-food-tour-Moroccan-mint-tea-915x610.jpg"
+        },
+        {
+            "name": "Djemaa el-Fna Food Stalls",
+            "location": "Marrakech",
+            "description": "Sample a variety of Moroccan street food in the bustling main square, from grilled meats to pastries.",
+            "url": "https://www.tripadvisor.com/ShowTopic-g293734-i9196-k13667197-Which_street_food_stalls_to_try_in_Jemaa_El_Fna-Marrakech_Marrakech_Safi.html",
+            "image": "https://res.cloudinary.com/lastminute-contenthub/s--Wo1hXr2p--/c_limit,h_999999,w_1024/f_auto/q_auto:eco/v1/Hub-Live/LastminuteFR/blog/images/e39f7f33-3e5f-4841-870a-bcb32ab67662"
+        },
+        {
+            "name": "Harira Soup Tasting",
+            "location": "Casablanca",
+            "description": "Try Morocco’s traditional soup, made with lentils, chickpeas, and spices, often served during Ramadan.",
+            "url": "https://ilvasodipandoro.com/fr/la-harira-marocaine/",
+            "image": "https://tasteofmaroc.com/wp-content/uploads/2017/05/harira-2-moroccan-soup-picturepartners-bigstock-740x493.jpg.webp"
+        },
+        {
+            "name": "Couscous Fridays",
+            "location": "Rabat",
+            "description": "Enjoy authentic couscous, a staple dish traditionally served on Fridays, made with fluffy grains and vegetables.",
+            "url": "https://tasteofmaroc.com/moroccan-couscous-with-seven-vegetables/",
+            "image": "https://spicebreeze.com/wp-content/uploads/2018/10/couscous.jpg"
+        },
+        {
+            "name": "Seafood at Agadir Marina",
+            "location": "Agadir",
+            "description": "Savor fresh seafood at waterfront restaurants, from grilled fish to fried calamari.",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g293731-d6697377-Reviews-Pure_Passion_Restaurant-Agadir_Souss_Massa.html",
+            "image": "https://www.barcelo.com/guia-turismo/wp-content/uploads/2024/09/ok-comer-en-agadir.jpg"
+        },
+        {
+            "name": "Pastilla Feast",
+            "location": "Fez",
+            "description": "Taste this sweet and savory pastry filled with spiced chicken or pigeon, almonds, and cinnamon.",
+            "url": "https://www.196flavors.com/pastilla/",
+            "image": "https://www.196flavors.com/wp-content/uploads/2016/11/pastilla-9.jpg"
+        },
+        {
+            "name": "Visit an Argan Oil Cooperative",
+            "location": "Essaouira",
+            "description": "Learn about and taste argan oil, a versatile Moroccan product used for cooking and cosmetics.",
+            "url": "https://thetravelbunny.com/tighanimine-womens-fairtrade-argan-oil-cooperative/",
+            "image": "https://www.culturecherifienne.com/wp-content/uploads/2018/04/coop%C3%A9rative-arganier-femmes.jpg"
+        },
+        {
+            "name": "Moroccan Pastries Tasting",
+            "location": "Meknes",
+            "description": "Sample traditional sweets like *chebakia* (fried sesame cookies) and *ghriba* (almond biscuits).",
+            "url": "https://www.chefspencil.com/moroccan-desserts/",
+            "image": "https://primemoroccotours.com/wp-content/uploads/2022/07/Moroccan-Sweets-12.jpg"
+        },
+        {
+            "name": "Visit a Traditional Riad for Dinner",
+            "location": "Chefchaouen",
+            "description": "Enjoy a multi-course Moroccan meal in the courtyard of a traditional riad, surrounded by beautiful décor.",
+            "url": "https://travelcollecting.com/best-riads-in-marrakech/",
+            "image": "https://images.lifestyleasia.com/wp-content/uploads/2019/01/28174044/riad-hero-2.jpg?tr=w-1366"
+        }
+]
+
     }
 
 
