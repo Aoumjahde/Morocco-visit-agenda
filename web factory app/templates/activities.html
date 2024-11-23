@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities - {{ category }}</title>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ category }}</h1>
+        <ul>
+            {% for activity in activities %}
+                <li>
+                    <img src="{{ activity.image }}" alt="{{ activity.name }}" class="activity-image">
+                    <h2>{{ activity.name }}</h2>
+                    <p>Location: {{ activity.location }}</p>
+                    <p>{{ activity.description }}</p>
+                    <a href="{{ activity.url }}" target="_blank">Learn More</a>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="/">Go Back</a>
+    </div>
+    
+</body>
+</html>
