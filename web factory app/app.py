@@ -1,76 +1,85 @@
 from flask import Flask, render_template, request 
 app = Flask(__name__)
 activities = {
-"Outdoor Adventures": [ # category 01
-    {
-        "name": "Camel Trekking in the Sahara Desert",
-        "location": "Merzouga",
-        "description": "Explore the vast dunes of Erg Chebbi on camelback, experiencing the beauty of the desert and its golden sands.",
-        "url": "https://www.visitmorocco.com/en/travel/sahara",
-        "image": "https://www.bing.com/images/search?view=detailV2&ccid=SZE7kEFS&id=317F3172575A66AEB6EA48E9E1D846A593B5DCE9&thid=OIP.SZE7kEFSniAve2cdujnpIwEsCI&mediaurl=https%3a%2f%2fwww.mouhoutours.com%2fwp-content%2fuploads%2f2019%2f05%2fcamel-trek-sahara-desert.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.49913b9041529e202f7b671dba39e923%3frik%3d6dy1k6VG2OHpSA%26pid%3dImgRaw%26r%3d0&exph=1806&expw=3977&q=Camel+Trekking+in+the+Sahara+Desert&simid=608050263466996429&FORM=IRPRST&ck=E0A7E73DDA9C52672DFE59B5DEA4A04B&selectedIndex=1&itb=0"},
+    "Outdoor Adventures": [ # category 01
+        {
+            "name": "Camel Trekking in the Sahara Desert",
+            "location": "Merzouga",
+            "description": "Explore the vast dunes of Erg Chebbi on camelback, experiencing the beauty of the desert and its golden sands.",
+            "url": "https://www.visitmorocco.com/en/travel/sahara",
+            "image": "https://wilddesertofmorocco.com/wp-content/uploads/2023/04/camel-caravan-late-afternoon-2-1290X540.jpg"
+        },
 
-    {
-        "name": "Hiking in the High Atlas Mountains",
-        "location": "Imlil, near Mount Toubkal",
-        "description": "Discover breathtaking trails, traditional Berber villages, and stunning mountain landscapes.",
-        "url": "https://www.trekkinginmorocco.com/",
-        "image": "https://www.bing.com/images/search?view=detailV2&ccid=sQ5Xpbik&id=FD8E0971A345970296C01A6E8E8468456941F36A&thid=OIP.sQ5Xpbik-7uYBcW7LCwZVQHaGo&mediaurl=https%3a%2f%2fi.pinimg.com%2foriginals%2f16%2f59%2fcf%2f1659cfb21bc3b94179450ea614bdf919.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.b10e57a5b8a4fbbb9805c5bb2c2c1955%3frik%3davNBaUVohI5uGg%26pid%3dImgRaw%26r%3d0&exph=916&expw=1024&q=Hiking+in+the+High+Atlas+Mountains&simid=607999501242617348&FORM=IRPRST&ck=37C5FCCB456F88769899FA6D795587E1&selectedIndex=4&itb=0"},
-    
-    {
-        "name": "Surfing in Taghazout",
-        "location": "Taghazout, near Agadir",
-        "description": "Enjoy world-class surfing on Morocco's Atlantic coast with a laid-back beach town vibe.",
-        "url": "https://www.surfmaroc.com/",
-        "image": "https://www.bing.com/images/search?view=detailV2&ccid=M6VgUo5R&id=EB8BEA77E3195C7796674FACEC7478319CAE603C&thid=OIP.M6VgUo5RAcJV12BgzwjjcwHaFS&mediaurl=https%3a%2f%2fsurfparadisemorocco.net%2fwp-content%2fuploads%2f2022%2f08%2fTaghazout-1.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.33a560528e5101c255d76060cf08e373%3frik%3dPGCunDF4dOysTw%26pid%3dImgRaw%26r%3d0&exph=572&expw=800&q=Surfing+in+Taghazout&simid=607986350106894647&FORM=IRPRST&ck=D30534079268F6892C7D0077D250946F&selectedIndex=1&itb=0"},
+        {
+            "name": "Hiking in the High Atlas Mountains",
+            "location": "Imlil, near Mount Toubkal",
+            "description": "Discover breathtaking trails, traditional Berber villages, and stunning mountain landscapes.",
+            "url": "https://www.trekkinginmorocco.com/",
+            "image": "https://i.natgeofe.com/n/197fcc7b-4cc6-45ff-b79b-fb57eadb7436/Morocco_02_AZZADEN_VALLEY_0423_HR.jpg?w=1280&h=853"
+        },
 
-    {
-        "name": "Hot Air Balloon Ride over Marrakech",
-        "location": "Marrakech",
-        "description": "Soar above the Red City and surrounding landscapes for an unforgettable sunrise experience.",
-        "url": "https://www.ciel-marrakech.com/en/",
-        "image": "https://www.bing.com/images/search?view=detailV2&ccid=DXLpPm1w&id=027F58A02E88987126C9D1E3BDE75DFC3ABB9CB1&thid=OIP.DXLpPm1w9fpXm7I-QC_g6wHaFj&mediaurl=https%3a%2f%2fepic.travel%2fwp-content%2fuploads%2f2019%2f04%2f530-hot-air-balloon-marrakech-2-1024x768.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.0d72e93e6d70f5fa579bb23e402fe0eb%3frik%3dsZy7Ovxd573j0Q%26pid%3dImgRaw%26r%3d0&exph=768&expw=1024&q=Hot+Air+Balloon+Ride+over+Marrakech&simid=608054953562813213&FORM=IRPRST&ck=2FEC2B3209E6AC783E01764449B53A6C&selectedIndex=0&itb=0"},
+        {
+            "name": "Surfing in Taghazout",
+            "location": "Taghazout, near Agadir",
+            "description": "Enjoy world-class surfing on Morocco's Atlantic coast with a laid-back beach town vibe.",
+            "url": "https://www.surfmaroc.com/",
+            "image": "https://thesurfatlas.com/wp-content/uploads/2020/09/Taghazout-surf-1.jpg"
+        },
 
-    {
-        "name": "Climbing in Todra Gorge",
-        "location": "Tinghir",
-        "description": "Challenge yourself with rock climbing or explore the dramatic canyon's hiking trails.",
-        "url": "https://www.planetware.com/morocco/todra-gorge-mar-dr-sotg.htm",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Todra_Gorge.jpg"},
+        {
+            "name": "Hot Air Balloon Ride over Marrakech",
+            "location": "Marrakech",
+            "description": "Soar above the Red City and surrounding landscapes for an unforgettable sunrise experience.",
+            "url": "https://www.ciel-marrakech.com/en/",
+            "image": "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/e8/e9/e5.jpg"
+        },
 
-    {
-        "name": "Quad Biking in Agafay Desert",
-        "location": "Agafay Desert, near Marrakech",
-        "description": "Ride through rocky desert terrain and enjoy panoramic views of the Atlas Mountains.",
-        "url": "https://www.getyourguide.com/marrakech-l208/agafay-desert-quad-biking-tour-t204420/",
-        "image": "https://www.bing.com/images/search?view=detailV2&ccid=w5hcMcYs&id=A72AECDE3B76F67F887CE76069833D991BC94D6D&thid=OIP.w5hcMcYscpSVYQKnNv88JAHaEK&mediaurl=https%3a%2f%2fmajatravels.com%2fwp-content%2fuploads%2f2023%2f04%2fclimbing-todra-sport-scaled.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.c3985c31c62c7294956102a736ff3c24%3frik%3dbU3JG5k9g2lg5w%26pid%3dImgRaw%26r%3d0&exph=1440&expw=2560&q=Climbing+in+Todra+Gorge&simid=608019417016066660&FORM=IRPRST&ck=0CE70980E3209FD359E10E526293CB12&selectedIndex=0&itb=0"},
+        {
+            "name": "Climbing in Todra Gorge",
+            "location": "Tinghir",
+            "description": "Challenge yourself with rock climbing or explore the dramatic canyon's hiking trails.",
+            "url": "https://www.planetware.com/morocco/todra-gorge-mar-dr-sotg.htm",
+            "image": "http://climbmorocco.com/wp-content/uploads/2012/03/Todra12-e1371625415614.jpg"
+        },
 
-    {
-        "name": "Exploring the Blue Streets of Chefchaouen",
-        "location": "Chefchaouen",
-        "description": "Stroll through the picturesque blue-painted streets of this serene mountain town.",
-        "url": "https://www.visitmorocco.com/en/travel/chefchaouen",
-        "image": "https://www.bing.com/images/search?view=detailV2&ccid=QSac1Zfv&id=426502495DE4E20201AFFC8925FE860986317362&thid=OIP.QSac1Zfvdkt6G9VVWAS1GwHaE8&mediaurl=https%3a%2f%2fwww.traveltalktours.com%2fwp-content%2fuploads%2f2022%2f03%2fmilad-alizadeh-JibMa0FbyHw-unsplash-1024x683.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.41269cd597ef764b7a1bd5555804b51b%3frik%3dYnMxhgmG%252fiWJ%252fA%26pid%3dImgRaw%26r%3d0&exph=683&expw=1024&q=Exploring+the+Blue+Streets+of+Chefchaouen&simid=608042219005050479&FORM=IRPRST&ck=D43207C010B8E7E8D73455ED122E1B02&selectedIndex=2&itb=0"},
+        {
+            "name": "Quad Biking in Agafay Desert",
+            "location": "Agafay Desert, near Marrakech",
+            "description": "Ride through rocky desert terrain and enjoy panoramic views of the Atlas Mountains.",
+            "url": "https://www.getyourguide.com/marrakech-l208/agafay-desert-quad-biking-tour-t204420/",
+            "image": "https://majatravels.com/wp-content/uploads/2023/04/climbing-todra-sport-scaled.jpg"
+        },
 
-    {
-        "name": "Windsurfing in Essaouira",
-        "location": "Essaouira",
-        "description": "Experience strong Atlantic winds perfect for windsurfing and kiteboarding in this charming coastal city.",
-        "url": "https://www.essaouira.com/",
-        "image": "https://www.bing.com/images/search?view=detailV2&ccid=8AX9E5rH&id=EFECF6EFDD2276AB02E1CFDA7E666B2A6080BE6F&thid=OIP.8AX9E5rHU5-bk0MhAmSfwQHaE7&mediaurl=https%3a%2f%2fwww.sportif.travel%2fimages%2fuploads%2fcentres%2fEssaouira%2fWS%2f5_Morocco_Essaouira_Windsurf_Kitesurf_Holiday_Action_Kitesurf_Lesson_800x533.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.f005fd139ac7539f9b93432102649fc1%3frik%3db76AYCprZn7azw%26pid%3dImgRaw%26r%3d0&exph=533&expw=800&q=Windsurfing+in+Essaouira&simid=608040896112959746&FORM=IRPRST&ck=9C1FD7266CC33C2FBBA2CCDE0C4C6F35&selectedIndex=1&itb=0"},
+        {
+            "name": "Exploring the Blue Streets of Chefchaouen",
+            "location": "Chefchaouen",
+            "description": "Stroll through the picturesque blue-painted streets of this serene mountain town.",
+            "url": "https://www.visitmorocco.com/en/travel/chefchaouen",
+            "image": "https://www.traveltalktours.com/wp-content/uploads/2022/03/milad-alizadeh-JibMa0FbyHw-unsplash-1024x683.jpg"
+        },
 
-    {
-        "name": "Horseback Riding in Souss Massa National Park",
-        "location": "Souss Massa National Park, near Agadir",
-        "description": "Ride through coastal dunes and spot unique wildlife, including gazelles and flamingos.",
-        "url": "https://www.visitmorocco.com/en/travel/souss-massa-national-park",
-        "image": "https://www.bing.com/images/search?view=detailV2&ccid=PeC8v87p&id=F78EAE8A3D38CA498BCA20864FCD5C6458F6B241&thid=OIP.PeC8v87pa2Xzf4V-JssjDQHaE7&mediaurl=https%3a%2f%2fwww.stunningtravel.nl%2fwp-content%2fuploads%2f2021%2f02%2fSouss-Massa-National-Park-696x463.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.3de0bcbfcee96b65f37f857e26cb230d%3frik%3dQbL2WGRczU%252bGIA%26pid%3dImgRaw%26r%3d0%26sres%3d1%26sresct%3d1%26srh%3d800%26srw%3d1202&exph=463&expw=696&q=Horseback+Riding+in+Souss+Massa+National+Park&simid=608002018128574727&FORM=IRPRST&ck=D6E9509CCEBD238B3869C75B30492C76&selectedIndex=6&itb=0"},
-        
-    {
-        "name": "Caving at Friouato Caves",
-        "location": "Taza",
-        "description": "Descend into Morocco's largest cave system and explore its fascinating geological formations.",
-        "url": "https://www.moroccoworldnews.com/2020/12/328366/friouato-caves-taza-a-hidden-natural-wonder-in-morocco/",
-        "image": "https://www.bing.com/images/search?view=detailV2&ccid=lu4n0iAL&id=7B23CB38F9E36A145A476B462AC8D45EE7F3EADB&thid=OIP.lu4n0iALZGY8Hc0pG8HnoQHaE5&mediaurl=https%3a%2f%2f1.bp.blogspot.com%2f-di5wg06hXIU%2fXcm0cZWrb-I%2fAAAAAAAAGoU%2fp2Y1mqdEK7UDqvdqqFo5QeOt0q3nwz5igCLcBGAsYHQ%2fs1600%2ffrou.PNG&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.96ee27d2200b64663c1dcd291bc1e7a1%3frik%3d2%252brz517UyCpGaw%26pid%3dImgRaw%26r%3d0&exph=367&expw=555&q=Caving+at+Friouato+Caves&simid=608048635666505527&FORM=IRPRST&ck=30902B89A11E2F575560625780308ED3&selectedIndex=1&itb=0"
+        {
+            "name": "Windsurfing in Essaouira",
+            "location": "Essaouira",
+            "description": "Experience strong Atlantic winds perfect for windsurfing and kiteboarding in this charming coastal city.",
+            "url": "https://www.essaouira.com/",
+            "image": "https://www.sportif.travel/images/uploads/centres/Essaouira/WS/5_Morocco_Essaouira_Windsurf_Kitesurf_Holiday_Action_Kitesurf_Lesson_800x533.jpg"
+        },
+
+        {
+            "name": "Horseback Riding in Souss Massa National Park",
+            "location": "Souss Massa National Park, near Agadir",
+            "description": "Ride through coastal dunes and spot unique wildlife, including gazelles and flamingos.",
+            "url": "https://www.visitmorocco.com/en/travel/souss-massa-national-park",
+            "image": "https://www.stunningtravel.nl/wp-content/uploads/2021/02/Souss-Massa-National-Park-696x463.jpg"
+        },
+
+        {
+            "name": "Caving at Friouato Caves",
+            "location": "Taza",
+            "description": "Descend into Morocco's largest cave system and explore its fascinating geological formations.",
+            "url": "https://www.moroccoworldnews.com/2020/12/328366/friouato-caves-taza-a-hidden-natural-wonder-in-morocco/",
+            "image": "https://1.bp.blogspot.com/-di5wg06hXIU/Xcm0cZWrb-I/AAAAAAAAGoU/p2Y1mqdEK7UDqvdqqFo5QeOt0q3nwz5igCLcBGAsYHQ/s1600/frou.PNG"
         }
     ],
     #************************************
@@ -79,143 +88,82 @@ activities = {
             "name": "Hassan II Mosque",
             "location": "Casablanca",
             "description": "The largest mosque in Morocco, renowned for its stunning architecture and seaside location.",
-            "url": "https://en.wikipedia.org/wiki/Hassan_II_Mosque",
-            "image": "https://images.pexels.com/photos/20070479/pexels-photo-20070479/free-photo-of-hassan-ii-mosque-in-casablanca-in-morocco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
+            "url": "https://www.theculturetrip.com/africa/morocco/articles/a-guide-to-the-hassan-ii-mosque-in-casablanca",
+            "image": "https://www.theculturetrip.com/wp-content/uploads/2018/02/hassan-ii-mosque-casablanca.jpg"
+        },
 
         {
             "name": "Volubilis",
             "location": "Near Meknes",
             "description": "A well-preserved Roman city and UNESCO World Heritage site, featuring stunning mosaics and ruins.",
-            "url": "https://en.wikipedia.org/wiki/Volubilis",
-            "image": "https://images.pexels.com/photos/11517326/pexels-photo-11517326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
+            "url": "https://www.planetware.com/tourist-attractions/morocco-meknes-volubilis-mar-mek.htm",
+            "image": "https://www.planetware.com/photos-large/Morocco/volubilis-ruins.jpg"
+        },
 
         {
             "name": "Aït Benhaddou",
             "location": "Ouarzazate",
             "description": "A fortified village and UNESCO site, famous for its earthen buildings and appearances in movies like 'Gladiator.'",
-            "url": "https://en.wikipedia.org/wiki/A%C3%AFt_Benhaddou",
-            "image": "https://images.pexels.com/photos/3581916/pexels-photo-3581916.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
+            "url": "https://www.moroccotours.net/blog/ait-benhaddou-morocco",
+            "image": "https://www.moroccotours.net/wp-content/uploads/2021/10/ait-benhaddou.jpg"
+        },
 
         {
             "name": "El Badi Palace",
             "location": "Marrakech",
             "description": "Ruins of a once-grand palace showcasing Saadian Dynasty architecture and history.",
-            "url": "https://en.wikipedia.org/wiki/El_Badi_Palace",
-            "image": "https://images.pexels.com/photos/18375222/pexels-photo-18375222/free-photo-of-view-of-the-annex-on-the-northwest-side-of-the-el-badi-palace-in-marrakesh-morocco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
+            "url": "https://www.roughguides.com/morocco/marrakech/el-badi-palace/",
+            "image": "https://www.roughguides.com/wp-content/uploads/2018/09/el-badi-palace.jpg"
+        },
 
         {
             "name": "Saadian Tombs",
             "location": "Marrakech",
             "description": "A hidden necropolis dating back to the Saadian Dynasty, famous for its intricate decoration.",
-            "url": "https://en.wikipedia.org/wiki/Saadian_Tombs",
-            "image": "https://images.pexels.com/photos/20740159/pexels-photo-20740159/free-photo-of-flower-bush-growing-by-entrance-to-saadian-tombs-in-marrakech-morocco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
+            "url": "https://www.traveltriangle.com/blog/saadian-tombs-marrakech/",
+            "image": "https://www.traveltriangle.com/blog/wp-content/uploads/2020/02/Saadian-Tombs.jpg"
+        },
 
         {
             "name": "Chellah",
             "location": "Rabat",
             "description": "An ancient necropolis and Roman ruin located in the capital city of Morocco.",
-            "url": "https://en.wikipedia.org/wiki/Chellah",
-            "image": "https://images.pexels.com/photos/19061686/pexels-photo-19061686/free-photo-of-narrow-alley-in-town-in-morocco.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
+            "url": "https://www.moroccotravelblog.com/chellah-the-roots-of-rabat/",
+            "image": "https://www.moroccotravelblog.com/wp-content/uploads/2017/05/chellah-rabat.jpg"
+        },
 
         {
             "name": "Bahia Palace",
             "location": "Marrakech",
             "description": "A 19th-century palace showcasing stunning Moroccan architecture and lush gardens.",
-            "url": "https://en.wikipedia.org/wiki/Bahia_Palace",
-            "image": "https://www.pexels.com/photo/bahia-palace-in-marrakesh-morocco-4220977/"},
+            "url": "https://www.tripadvisor.com/Attraction_Review-g293734-d318068-Reviews-Bahia_Palace-Marrakech_Marrakech_Safi.html",
+            "image": "https://media-cdn.tripadvisor.com/media/photo-s/12/73/13/84/bahia-palace.jpg"
+        },
 
         {
             "name": "Kasbah of the Udayas",
             "location": "Rabat",
             "description": "A historic kasbah with picturesque streets, Andalusian gardens, and ocean views.",
-            "url": "https://en.wikipedia.org/wiki/Kasbah_of_the_Udayas",
-            "image": "https://images.pexels.com/photos/2958597/pexels-photo-2958597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
+            "url": "https://www.touropia.com/kasbah-of-the-udayas/",
+            "image": "https://www.touropia.com/wp-content/uploads/2018/01/kasbah-of-the-udayas.jpg"
+        },
 
         {
             "name": "Fez Medina (Fes el Bali)",
             "location": "Fez",
             "description": "One of the oldest and largest medieval cities in the world, and a UNESCO World Heritage site.",
-            "url": "https://en.wikipedia.org/wiki/Fes_el_Bali",
-            "image": "https://images.pexels.com/photos/5472521/pexels-photo-5472521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
+            "url": "https://www.planetware.com/morocco/fez-el-bali-fes-mar-fes.htm",
+            "image": "https://www.planetware.com/photos-large/Morocco/fez-medina.jpg"
+        },
 
         {
             "name": "Mausoleum of Mohammed V",
             "location": "Rabat",
             "description": "The tomb of King Mohammed V, featuring intricate Moroccan artistry and history.",
-            "url": "https://en.wikipedia.org/wiki/Mausoleum_of_Mohammed_V",
-            "image": "https://images.pexels.com/photos/9208231/pexels-photo-9208231.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "url": "https://www.moroccoworldnews.com/2021/01/334824/mausoleum-of-mohammed-v-in-rabat-morocco",
+            "image": "https://www.moroccoworldnews.com/wp-content/uploads/2021/01/mausoleum-mohammed-v-rabat.jpg"
         }
-    ],
-    #************************************
-    "Food & Drink": [ # category 03
-        {
-            "name": "Tagine Cooking Experience",
-            "location": "Marrakech",
-            "description": "Learn to prepare Morocco’s iconic slow-cooked dish, rich in spices and flavors, in a traditional tagine pot.",
-            "url": "https://www.cookingclassmaroc.com",
-            "image": "https://www.pexels.com/photo/person-holding-purple-ceramic-lid-2287528/" },
-        {
-            "name": "Moroccan Mint Tea Ceremony",
-            "location": "Fez",
-            "description": "Experience the art of pouring and drinking traditional mint tea, a symbol of hospitality in Morocco.",
-            "url": "https://en.wikipedia.org/wiki/Maghrebi_mint_tea",
-            "image": "https://www.pexels.com/photo/person-pouring-tea-cup-glass-near-brown-curtain-1618904/"},
-            
-        {
-            "name": "Djemaa el-Fna Food Stalls",
-            "location": "Marrakech",
-            "description": "Sample a variety of Moroccan street food in the bustling main square, from grilled meats to pastries.",
-            "url": "https://www.visitmorocco.com/en/marrakech",
-            "image": "https://images.pexels.com/photos/3243027/pexels-photo-3243027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        },
-        {
-            "name": "Harira Soup Tasting",
-            "location": "Casablanca",
-            "description": "Try Morocco’s traditional soup, made with lentils, chickpeas, and spices, often served during Ramadan.",
-            "url": "https://www.marocmama.com/moroccan-harira-soup-recipe/",
-            "image": "https://www.pexels.com/photo/a-bowl-of-pumpkin-soup-6853457/"},
 
-        {
-            "name": "Couscous Fridays",
-            "location": "Rabat",
-            "description": "Enjoy authentic couscous, a staple dish traditionally served on Fridays, made with fluffy grains and vegetables.",
-            "url": "https://en.wikipedia.org/wiki/Couscous",
-            "image": "https://tasteofmaroc.com/wp-content/uploads/2017/10/couscous-hayat-2-740x545.jpg.webp"},
-
-        {
-            "name": "Seafood at Agadir Marina",
-            "location": "Agadir",
-            "description": "Savor fresh seafood at waterfront restaurants, from grilled fish to fried calamari.",
-            "url": "https://www.tripadvisor.com/Restaurants-g293731-c33-Agadir_Souss_Massa.html",
-            "image": "https://tasteofmaroc.com/wp-content/uploads/2018/08/seafood-bastilla-bigstock-picturepartners-740x493.jpg.webp"},
-
-        {
-            "name": "Pastilla Feast",
-            "location": "Fez",
-            "description": "Taste this sweet and savory pastry filled with spiced chicken or pigeon, almonds, and cinnamon.",
-            "url": "https://en.wikipedia.org/wiki/Bastilla",
-            "image": "https://www.bing.com/images/search?view=detailV2&ccid=SAsbp%2frT&id=CFF83B65EF4BDAB8D8DCF8DC8AB034B952DAFC3E&thid=OIP.SAsbp_rTR2t0GC7KMjy2aQHaEK&mediaurl=https%3a%2f%2fwww.mjtnews.com%2fwp-content%2fuploads%2f2020%2f09%2f5316136140001_6007131285001_6007124510001-vs-2.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.480b1ba7fad3476b74182eca323cb669%3frik%3dPvzaUrk0sIrc%252bA%26pid%3dImgRaw%26r%3d0&exph=1080&expw=1920&q=pastilla+Feast+morocco&simid=608031253929881545&FORM=IRPRST&ck=4893F6283287BC4385B7818374793329&selectedIndex=3&itb=0"},
-
-        {
-            "name": "Visit an Argan Oil Cooperative",
-            "location": "Essaouira",
-            "description": "Learn about and taste argan oil, a versatile Moroccan product used for cooking and cosmetics.",
-            "url": "https://www.lonelyplanet.com/articles/moroccan-argan-oil",
-            "image": "https://www.bing.com/images/search?view=detailV2&ccid=rvWoVu5j&id=27444A2B6C37426E4313841DDDC1E42D662D1B6A&thid=OIP.rvWoVu5jJOTA3xKaekLK5gHaFj&mediaurl=https%3a%2f%2fwww.culturecherifienne.com%2fwp-content%2fuploads%2f2018%2f04%2fcoop%c3%a9rative-arganier-femmes-1024x768.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.aef5a856ee6324e4c0df129a7a42cae6%3frik%3dahstZi3kwd0dhA%26pid%3dImgRaw%26r%3d0&exph=768&expw=1024&q=Visit+an+Argan+Oil+Cooperative&simid=608056297853226584&FORM=IRPRST&ck=B7FFE3873C7774BE967F7027857525A4&selectedIndex=7&itb=0"},
-
-        {
-            "name": "Moroccan Pastries Tasting",
-            "location": "Meknes",
-            "description": "Sample traditional sweets like *chebakia* (fried sesame cookies) and *ghriba* (almond biscuits).",
-            "url": "https://tasteatlas.com/moroccan-desserts",
-            "image": "https://www.bing.com/images/search?view=detailV2&ccid=0b%2b9wbQ3&id=0D809D09D58B55D7E5D81EFFD4547873521F7286&thid=OIP.0b-9wbQ3pkVIupxT1alGwQHaE8&mediaurl=https%3a%2f%2fi.pinimg.com%2foriginals%2f8b%2f32%2fa5%2f8b32a5ea233f38ca58fd236c7bbf7648.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.d1bfbdc1b437a64548ba9c53d5a946c1%3frik%3dhnIfUnN4VNT%252fHg%26pid%3dImgRaw%26r%3d0&exph=2304&expw=3456&q=Moroccan+Pastries+Tasting&simid=608011432704937619&FORM=IRPRST&ck=D57229EB0933BF8482E6B142613C4C70&selectedIndex=39&itb=0"},
-
-        {
-            "name": "Visit a Traditional Riad for Dinner",
-            "location": "Chefchaouen",
-            "description": "Enjoy a multi-course Moroccan meal in the courtyard of a traditional riad, surrounded by beautiful décor.",
-            "url": "https://www.riadchefchaouen.com",
-            "image": "https://www.bing.com/images/search?view=detailV2&ccid=YpKWN7Tr&id=44E26D9BBC322A0BBAB7EA0D6BE34703EC4CF681&thid=OIP.YpKWN7TrdqZY3oe0FkFWFgHaE7&mediaurl=https%3a%2f%2fimages.musement.com%2fcover%2f0081%2f46%2fthumb_8045901_cover_header.jpeg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.62929637b4eb76a658de87b416415616%3frik%3dgfZM7ANH42sN6g%26pid%3dImgRaw%26r%3d0&exph=1333&expw=2000&q=Visit+a+Traditional+Riad+for+Dinner&simid=608010852846737742&FORM=IRPRST&ck=6A6A8D16DA16457F3CD7F41CF218A652&selectedIndex=3&itb=0"}
     ],
     #************************************
     "Villages": [ # category 04
