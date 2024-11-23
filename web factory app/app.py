@@ -171,70 +171,70 @@ activities = {
             "location": "Rif Mountains",
             "description": "Known for its blue-washed buildings and relaxed atmosphere, Chefchaouen is one of the most picturesque villages in Morocco.",
             "url": "https://en.wikipedia.org/wiki/Chefchaouen",
-            "image": "https://www.pexels.com/photo/a-narrow-hallway-4652060/"},
+            "image": "https://www.solosophie.com/wp-content/uploads/2023/02/Chefchaouen_1860127240-960x629.jpeg"},
 
         {
             "name": "Imlil",
             "location": "High Atlas Mountains",
             "description": "A tranquil mountain village and gateway to Toubkal National Park, perfect for hikers and nature lovers.",
             "url": "https://en.wikipedia.org/wiki/Imlil,_Morocco",
-            "image": "https://www.bing.com/images/search?q=imlil%2c+marrakesh-safi&cbn=KnowledgeCard&stid=4b5999ce-96b2-5832-7889-3631538f545b&thid=OSK.HEROPFaQlvo0CBYqg3EnRfWiPyIYD590vcNbFsZxzgMQ1T0Y&FORM=KCHIMM"},
+            "image": "https://marrakech-riads.com/wp-content/uploads/2018/09/imlil-marrakech-riads.jpg"},
 
         {
             "name": "Aït Benhaddou",
             "location": "Ouarzazate Region",
             "description": "A historic fortified village and UNESCO World Heritage site, famous for its kasbahs and movie appearances.",
             "url": "https://en.wikipedia.org/wiki/A%C3%AFt_Benhaddou",
-            "image": "https://www.bing.com/images/search?q=A%c3%aft+Benhaddou&id=6BB3AA9A4F80918D418974256B7848CB1C16F02A"},
+            "image": "https://www.airpano.com/photogallery/images_1550/195_429576.jpg"},
 
         {
             "name": "Asilah",
             "location": "Atlantic Coast",
             "description": "A charming coastal village known for its whitewashed medina, vibrant murals, and seaside views.",
             "url": "https://en.wikipedia.org/wiki/Asilah",
-            "image": "https://www.bing.com/images/search?q=asilah&cbn=KnowledgeCard&stid=2a8869e8-24b7-2922-3070-2f0075a79a65&thid=OSK.HEROP9S5rqWwPV4gOCdC9HM-aX5RxUNORv7AARc3roKy5g0I&FORM=KCHIMM"},
+            "image": "https://www.traveloffpath.com/wp-content/uploads/2019/06/Asilah-Morocco.jpg"},
 
         {
             "name": "Moulay Idriss Zerhoun",
             "location": "Near Meknes",
             "description": "A sacred village named after the founder of Morocco’s first dynasty, with stunning views and a peaceful vibe.",
             "url": "https://en.wikipedia.org/wiki/Moulay_Idriss_Zerhoun",
-            "image": "https://www.bing.com/images/search?view=detailV2&ccid=Wb0oM6tc&id=7EFDAB73CD7FA76406C630E56404CD35FCD7F4BB&thid=OIP.Wb0oM6tcJkTw1_OxAI_-QgHaFO&mediaurl=https%3a%2f%2fheroesofadventure.com%2fwp-content%2fuploads%2f2018%2f08%2fMoulay_Idriss_2.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.59bd2833ab5c2644f0d7f3b1008ffe42%3frik%3du%252fTX%252fDXNBGTlMA%26pid%3dImgRaw%26r%3d0&exph=1342&expw=1900&q=Moulay+Idriss+Zerhoun&simid=607991297889031834&FORM=IRPRST&ck=D64D54701F044DC994A1F1D11313188B&selectedIndex=1&itb=0"},
+            "image": "https://heroesofadventure.com/wp-content/uploads/2018/08/Moulay_Idriss_2.jpg"},
 
         {
             "name": "Tafraoute",
             "location": "Anti-Atlas Mountains",
             "description": "A colorful village surrounded by unique pink granite formations and palm groves.",
             "url": "https://en.wikipedia.org/wiki/Tafraout",
-            "image": "https://www.bing.com/images/search?view=detailV2&ccid=3nPtT%2fTh&id=8DA392B65B052A29C166477B607865BD3C565C40&thid=OIP.3nPtT_ThJpSSYxhcrl5UEwHaE6&mediaurl=https%3a%2f%2fwww.moroccoprivatetours.net%2fuploads%2f346_tafraoute1.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.de73ed4ff4e126949263185cae5e5413%3frik%3dQFxWPL1leGB7Rw%26pid%3dImgRaw%26r%3d0&exph=680&expw=1024&q=Tafraoute&simid=608005037435793921&FORM=IRPRST&ck=C31555BB99426C5433895309D198718E&selectedIndex=2&itb=0"},
+            "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/morocco-south-morocco-blue-rocks-near-tafraoute-painted-by-belgian-artist-jean-veran-ugo-mellone.jpg"},
 
         {
             "name": "Merzouga",
             "location": "Sahara Desert",
             "description": "A small desert village near the Erg Chebbi dunes, offering camel treks and stunning sunrises.",
             "url": "https://en.wikipedia.org/wiki/Merzouga",
-            "image": "https://www.bing.com/images/search?view=detailV2&ccid=ztFhmjIl&id=6FB3787E8C1817C9709E4863A1CEDB243B882706&thid=OIP.ztFhmjIla_sDaJdNSDoLXAHaEK&mediaurl=https%3a%2f%2fcdn.getyourguide.com%2fimg%2flocation%2f5ce408a48feba.jpeg%2f88.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.ced1619a32256bfb0368974d483a0b5c%3frik%3dBieIOyTbzqFjSA%26pid%3dImgRaw%26r%3d0&exph=1350&expw=2400&q=Merzouga&simid=608001356672747759&FORM=IRPRST&ck=31E0E0C6211234EBC3EA50D3B721DF21&selectedIndex=0&itb=0"},
+            "image": "https://media.hostunusual.com/wp-content/uploads/2022/04/31201356/merzouga-luxury-tented-camp-Main-ext-1024x683.jpg"},
 
         {
             "name": "Ouirgane",
             "location": "High Atlas Mountains",
             "description": "A serene mountain village surrounded by olive groves and a great base for exploring nature trails.",
             "url": "https://www.lonelyplanet.com/morocco/ouirgane",
-            "image": "https://www.bing.com/images/search?view=detailV2&ccid=Xg%2fuL0Md&id=FC340A6DB3C6BDA9DBDC082E913892584181EF00&thid=OIP.Xg_uL0Md1_ez3WucO7UupQHaEo&mediaurl=https%3a%2f%2fwww.souladventuremorocco.com%2fwp-content%2fuploads%2f2019%2f09%2fOuirgane-Valley-Lake-Ouirgane-Marrakech-excursion.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.5e0fee2f431dd7f7b3dd6b9c3bb52ea5%3frik%3dAO%252bBQViSOJEuCA%26pid%3dImgRaw%26r%3d0%26sres%3d1%26sresct%3d1%26srh%3d800%26srw%3d1280&exph=500&expw=800&q=Ouirgane&simid=607996357336514657&FORM=IRPRST&ck=7E978044CD38F4910E66FF00EB850EFD&selectedIndex=1&itb=0"},
+            "image": "https://www.souladventuremorocco.com/wp-content/uploads/2019/09/Ouirgane-Valley-Lake-Ouirgane-Marrakech-excursion.jpg"},
 
         {
             "name": "Tamnougalt",
             "location": "Draa Valley",
             "description": "An ancient kasbah village with earthen architecture, palm groves, and a rich history.",
             "url": "https://en.wikipedia.org/wiki/Tamnougalt",
-            "image": "https://www.bing.com/images/search?view=detailV2&ccid=nxA916ta&id=C59CBE7C8394AFF68345D5DAEF517221480279C5&thid=OIP.nxA916taqNypWV8ATfyfRgHaE8&mediaurl=https%3a%2f%2fwww.thisfabtrek.com%2fjourney%2fafrica%2fmorocco%2f20050323-tamnougalt%2ftamn-kasbah2-4.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.9f103dd7ab5aa8dca9595f004dfc9f46%3frik%3dxXkCSCFyUe%252fa1Q%26pid%3dImgRaw%26r%3d0&exph=1024&expw=1536&q=Tamnougalt&simid=608018012556575053&FORM=IRPRST&ck=98D20955B24E524A42DA5C1008EF5760&selectedIndex=8&itb=0"},
+            "image": "https://www.traveltamegroute.net/wp-content/uploads/2017/03/Fotolia_140664315_Subscription_Monthly_M.jpg"},
 
         {
             "name": "Imsouane",
             "location": "Atlantic Coast",
             "description": "A tranquil fishing village popular among surfers and seafood lovers, with stunning beaches and views.",
             "url": "https://www.surfertoday.com/travel/imsouane",
-            "image": "https://www.bing.com/images/search?view=detailV2&ccid=CS7RNAEd&id=63D54C45E067EEDB0C37980EF32F5786AA6FEFE6&thid=OIP.CS7RNAEd32zRduMWzeDG2QHaE8&mediaurl=https%3a%2f%2fwww.zensurfmorocco.com%2fwp-content%2fuploads%2f2023%2f06%2fCHU6101-S-1.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.092ed134011ddf6cd176e316cde0c6d9%3frik%3d5u9vqoZXL%252fMOmA%26pid%3dImgRaw%26r%3d0&exph=801&expw=1200&q=Imsouane&simid=608026516584995729&FORM=IRPRST&ck=534EA65E8DECE4D6545B59F059C8BE08&selectedIndex=0&itb=0"}
+            "image": "https://www.travelsurfmorocco.com/wp-content/uploads/2016/04/1-imessouane-bay.jpg"}
     ],
     }
 
