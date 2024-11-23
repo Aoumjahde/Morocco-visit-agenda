@@ -308,14 +308,11 @@ activities = {
             "image": "https://images.lifestyleasia.com/wp-content/uploads/2019/01/28174044/riad-hero-2.jpg?tr=w-1366"
         }
 ]
-
-    }
-
+}
 
 @app.route('/')
 def home():
     return render_template('home.html',  categories=activities.keys())
-
 
 @app.route('/activities', methods = ['POST'])
 def showing_activities():
@@ -323,7 +320,6 @@ def showing_activities():
     choes_an_activitie = activities.get(category, [])
     
     return render_template('activities.html', category= category, activities = choes_an_activitie)
-
 
 if __name__ == '__main__':
     app.run(debug=True)
