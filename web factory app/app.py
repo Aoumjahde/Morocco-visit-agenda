@@ -84,20 +84,20 @@ activities = {
     ],
     #************************************
     "Historical Sites": [ # category 02
-{
-    "name": "Hassan II Mosque",
-    "location": "Casablanca",
-    "description": "The largest mosque in Morocco, renowned for its stunning architecture and seaside location.",
-    "url": "https://www.theculturetrip.com/africa/morocco/articles/a-guide-to-the-hassan-ii-mosque-in-casablanca",
-    "image": "hassan2mosuqe.jpeng"
-},
+        {
+            "name": "Hassan II Mosque",
+            "location": "Casablanca",
+            "description": "The largest mosque in Morocco, renowned for its stunning architecture and seaside location.",
+            "url": "https://www.theculturetrip.com/africa/morocco/articles/a-guide-to-the-hassan-ii-mosque-in-casablanca",
+            "image": "https://images.memphistours.com/large/d4582f9dbf053d1c4238918d4932b6a1.jpg"
+        },
 
         {
             "name": "Volubilis",
             "location": "Near Meknes",
             "description": "A well-preserved Roman city and UNESCO World Heritage site, featuring stunning mosaics and ruins.",
             "url": "https://www.planetware.com/tourist-attractions/morocco-meknes-volubilis-mar-mek.htm",
-            "image": "https://www.planetware.com/photos-large/Morocco/volubilis-ruins.jpg"
+            "image": "https://i.pinimg.com/originals/6a/d4/59/6ad4596310cd0b59cebf11f85b474b4b.jpg"
         },
 
         {
@@ -105,7 +105,7 @@ activities = {
             "location": "Ouarzazate",
             "description": "A fortified village and UNESCO site, famous for its earthen buildings and appearances in movies like 'Gladiator.'",
             "url": "https://www.moroccotours.net/blog/ait-benhaddou-morocco",
-            "image": "https://www.moroccotours.net/wp-content/uploads/2021/10/ait-benhaddou.jpg"
+            "image": "https://ucarecdn.com/a8b1b6cb-45cb-4b58-b596-82b1214f5063/"
         },
 
         {
@@ -113,7 +113,7 @@ activities = {
             "location": "Marrakech",
             "description": "Ruins of a once-grand palace showcasing Saadian Dynasty architecture and history.",
             "url": "https://www.roughguides.com/morocco/marrakech/el-badi-palace/",
-            "image": "https://www.roughguides.com/wp-content/uploads/2018/09/el-badi-palace.jpg"
+            "image": "https://www.gpsmycity.com/img/gd_attr/19223.jpg"
         },
 
         {
@@ -121,7 +121,7 @@ activities = {
             "location": "Marrakech",
             "description": "A hidden necropolis dating back to the Saadian Dynasty, famous for its intricate decoration.",
             "url": "https://www.traveltriangle.com/blog/saadian-tombs-marrakech/",
-            "image": "https://www.traveltriangle.com/blog/wp-content/uploads/2020/02/Saadian-Tombs.jpg"
+            "image": "https://global-geography.org/attach/Geography/Africa/Morocco/Pictures/Imperial_Cities/Rabat_-_Mausoleum_of_Mohammed_V_4/MA290_Mausoleum_Mohammed_V.jpg"
         },
 
         {
@@ -129,7 +129,7 @@ activities = {
             "location": "Rabat",
             "description": "An ancient necropolis and Roman ruin located in the capital city of Morocco.",
             "url": "https://www.moroccotravelblog.com/chellah-the-roots-of-rabat/",
-            "image": "https://www.moroccotravelblog.com/wp-content/uploads/2017/05/chellah-rabat.jpg"
+            "image": "https://media-cdn.sygictraveldata.com/media/800x600/612664395a40232133447d33247d383738373936"
         },
 
         {
@@ -137,7 +137,7 @@ activities = {
             "location": "Marrakech",
             "description": "A 19th-century palace showcasing stunning Moroccan architecture and lush gardens.",
             "url": "https://www.tripadvisor.com/Attraction_Review-g293734-d318068-Reviews-Bahia_Palace-Marrakech_Marrakech_Safi.html",
-            "image": "https://media-cdn.tripadvisor.com/media/photo-s/12/73/13/84/bahia-palace.jpg"
+            "image": "https://morocco-phototours.com/wp-content/uploads/2023/07/Bahia-Palace.jpg"
         },
 
         {
@@ -145,15 +145,14 @@ activities = {
             "location": "Rabat",
             "description": "A historic kasbah with picturesque streets, Andalusian gardens, and ocean views.",
             "url": "https://www.touropia.com/kasbah-of-the-udayas/",
-            "image": "https://www.touropia.com/wp-content/uploads/2018/01/kasbah-of-the-udayas.jpg"
+            "image": "https://images.memphistours.com/large/75e0e0cbb7e76afe2e054d091912bb41.jpg"
         },
-
         {
             "name": "Fez Medina (Fes el Bali)",
             "location": "Fez",
             "description": "One of the oldest and largest medieval cities in the world, and a UNESCO World Heritage site.",
             "url": "https://www.planetware.com/morocco/fez-el-bali-fes-mar-fes.htm",
-            "image": "https://www.planetware.com/photos-large/Morocco/fez-medina.jpg"
+            "image": "https://teaspoonofadventure.com/wp-content/uploads/2020/05/IMG_1613-760x1013.jpg"
         },
 
         {
@@ -161,7 +160,7 @@ activities = {
             "location": "Rabat",
             "description": "The tomb of King Mohammed V, featuring intricate Moroccan artistry and history.",
             "url": "https://www.moroccoworldnews.com/2021/01/334824/mausoleum-of-mohammed-v-in-rabat-morocco",
-            "image": "MausoleumMohammed.jpg"
+            "image": "https://www.gpsmycity.com/img/gd_attr/44615.jpg"
         }
 
     ],
